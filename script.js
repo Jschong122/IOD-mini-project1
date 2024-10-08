@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (fetchDogBreeds) => {
     const barkingLevel = document.getElementById("barkinglevel").value;
     clearDogs();
 
-    const apiUrl = `https://leafy-froyo-e04e7a.netlify.app/.netlify/functions/fetch-api?name=${dogName}`;
+    const apiUrl = `/.netlify/functions/fetch-api?name=${dogName}`;
 
     fetch(apiUrl)
       .then((response) => {
