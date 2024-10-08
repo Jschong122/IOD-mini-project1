@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", (fetchDogBreeds) => {
         return response.json();
       })
       .then((data) => {
-        console.log("Data received:", data);
         let filteredData = data;
 
         if (barkingLevel === "0") {
@@ -70,7 +69,6 @@ document.addEventListener("DOMContentLoaded", (fetchDogBreeds) => {
       const cardBody = document.createElement("div");
       cardBody.className = "card-body";
 
-      console.log("Dog object:", dog);
       cardBody.innerHTML = `<p>Breed : ${dog.name}</p>
           <p>Max life Expectancy: ${dog.max_life_expectancy}</p>
           <p>Min life Expectancy: ${dog.min_life_expectancy}</p>
